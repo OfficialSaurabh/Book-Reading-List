@@ -24,7 +24,7 @@ function BookShow({ book, onDelete, onEdit }) {
   return (
     <div
     style={{
-      marginRight: "10px"
+      margin: "10px"
     }}
     >
       <img src={`https://picsum.photos/seed/${book.id}/200`} alt="" />

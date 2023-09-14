@@ -21,6 +21,7 @@ function BookList({ books, onDelete, onEdit }) {
         style={{
           display: "flex",
           justifyContent: "center",
+          flexWrap:"wrap"
           
         }}
       >

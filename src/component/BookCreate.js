@@ -10,9 +10,20 @@ function BookCreate({ onCreate }) {
   
   const handleSubmit = (event) =>{
     event.preventDefault();
+    if(!title){
+      alert('Please enter a title')
+      return;
+    }
     onCreate(title)
     setTitle('')
   }
+
+  // Add a funtion that without writing the title, the button will not work
+  
+
+
+
+
   return(
     <div>
     <form action="" onSubmit={handleSubmit}>
