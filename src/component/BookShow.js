@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import BookEdit from "./BookEdit";
+import BooksContext from "../context/books";
 
 function BookShow({ book, onDelete, onEdit }) {
+  const contextValue = useContext(BooksContext);
   const [showEdit, setShowEdit] = useState(false);
 
   const handleDeleteClick = () => {
@@ -28,7 +30,7 @@ function BookShow({ book, onDelete, onEdit }) {
       <div>{content}</div>
       <div className="actions">
         <button className="edit" onClick={handleEditClick}>
-          Edit
+          Edit {contextValue}
         </button>
         <button className="delete" onClick={handleDeleteClick}>
           Delete
