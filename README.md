@@ -6,6 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### 'npm i'
+In different terminal install the local server and run the below command
+### 'npm i json-server'
+### 'npm run server'
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
